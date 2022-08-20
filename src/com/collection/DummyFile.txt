@@ -1,0 +1,3 @@
+This is a text file which i want to delete.
+Hello all i'm learning Github.
+Thanks all
