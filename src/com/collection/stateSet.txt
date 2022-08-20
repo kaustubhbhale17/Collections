@@ -1,0 +1,36 @@
+package com.collection;
+
+import java.util.LinkedHashSet;
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class StatesSet {
+
+	
+	public static void main(String[] args) {
+		LinkedHashSet<String> stateSet = new LinkedHashSet<String>();
+		//SortedSet<String> sortedStates = new TreeSet<String>();
+		
+		stateSet.add("Karnataka");
+		stateSet.add("Punjab");
+		stateSet.add("Telangana");
+		stateSet.add("Maharashtra");
+		stateSet.add("Tamil Nadu");
+		stateSet.add("Uttar Pradesh");
+		stateSet.add("Karnataka");
+		stateSet.add("Punjab");
+		stateSet.add("Kerala");
+		stateSet.add("Delhi");
+		
+		System.out.println(stateSet.size());
+		stateSet.remove("Delhi");
+		
+		System.out.println("States staring with K: ");
+		for(String str : stateSet){
+			if(str.startsWith("K") || str.startsWith("k"))
+				System.out.println(str);
+		}
+
+	}
+
+}
